@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name" translatable="false">Air Tickets</string>
+    <string name="city" translatable="false">City</string>
+    <string name="code" translatable="false">Code</string>
+    <string name="date" translatable="false">Date</string>
+    <string name="price" translatable="false">Price</string>
+    <string name="depart" translatable="false">Depart</string>
+    <string name="route" translatable="false">Route</string>
+    <string name="back" translatable="false">Back</string>
+    <string name="buy" translatable="false">Buy</string>
+    <string name="error_loading">Error loading</string>
+</resources>

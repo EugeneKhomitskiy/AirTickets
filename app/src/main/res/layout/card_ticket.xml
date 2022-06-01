@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardView"
+    app:cardCornerRadius="@dimen/margin"
+    android:outlineSpotShadowColor="@color/my"
+    app:cardBackgroundColor="@color/white"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin">
+
+        <TextView
+            android:id="@+id/startCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/city"
+            android:textSize="@dimen/textSize"
+            android:textColor="@color/black"
+            android:layout_marginEnd="@dimen/margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/arrows"
+            app:layout_constraintTop_toTopOf="@+id/arrows" />
+
+        <ImageView
+            android:id="@+id/arrows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin"
+            android:src="@drawable/ic_baseline_compare_arrows_24"
+            tools:ignore="ContentDescription,MissingConstraints"
+            app:layout_constraintStart_toEndOf="@id/startCity"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/endCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin"
+            android:text="@string/city"
+            android:textSize="@dimen/textSize"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/arrows"
+            app:layout_constraintStart_toEndOf="@+id/arrows"
+            app:layout_constraintTop_toTopOf="@+id/arrows" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price"
+            android:textColor="@color/my"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/date"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/startCityCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/code"
+            app:layout_constraintEnd_toEndOf="@+id/startCity"
+            app:layout_constraintStart_toStartOf="@+id/startCity"
+            app:layout_constraintTop_toBottomOf="@+id/startCity" />
+
+        <TextView
+            android:id="@+id/endCityCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/code"
+            app:layout_constraintEnd_toEndOf="@+id/endCity"
+            app:layout_constraintStart_toStartOf="@+id/endCity"
+            app:layout_constraintTop_toBottomOf="@+id/endCity" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:textSize="@dimen/textSize"
+            android:textColor="@color/black"
+            android:text="@string/date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/startCityCode" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/like"
+            style="@style/Widget.AppTheme.LikeCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:background="@android:color/transparent"
+            app:icon="@drawable/ic_like_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/date" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

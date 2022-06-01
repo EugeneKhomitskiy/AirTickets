@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Авиабилеты</string>
+    <string name="city" translatable="false">Город</string>
+    <string name="code" translatable="false">Код</string>
+    <string name="date" translatable="false">Дата</string>
+    <string name="price" translatable="false">Цена</string>
+    <string name="depart" translatable="false">Туда</string>
+    <string name="route" translatable="false">Маршрут</string>
+    <string name="back" translatable="false">Обратно</string>
+    <string name="buy" translatable="false">Купить</string>
+    <string name="error_loading">Ошибка загрузки</string>
+</resources>
