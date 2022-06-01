@@ -9,5 +9,5 @@
 
 Можно поставить/снять отметку "нравится" на обоих экранах. Данные сохраняются локально на устройстве.
 
-![Image alt](aaa)
-![Image alt](aaa)
+![Image alt](https://github.com/EugeneKhomitskiy/AirTickets/blob/master/pictures/1.png)
+![Image alt](https://github.com/EugeneKhomitskiy/AirTickets/blob/master/pictures/2.png)
