@@ -10,6 +10,7 @@ import androidx.fragment.app.viewModels
 import com.example.airtickets.databinding.FragmentSingleTicketBinding
 import com.example.airtickets.extension.anim
 import com.example.airtickets.extension.toDate
+import com.example.airtickets.extension.toDateEndTime
 import com.example.airtickets.viewmodel.TicketViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -37,9 +38,9 @@ class SingleTicketFragment : Fragment() {
                 if (ticket.searchToken == searchToken) {
                     with(binding) {
                         departRoute.text = "${ticket.startCity} - ${ticket.endCity}"
-                        departDate.text = ticket.startDate.toDate()
+                        departDate.text = ticket.startDate.toDateEndTime()
                         backRoute.text = "${ticket.endCity} - ${ticket.startCity}"
-                        returnDate.text = ticket.endDate.toDate()
+                        returnDate.text = ticket.endDate.toDateEndTime()
                         price.text = "${ticket.price} ₽"
                         like.isChecked = ticket.likedByMe
 

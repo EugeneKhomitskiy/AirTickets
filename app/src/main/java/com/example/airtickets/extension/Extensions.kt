@@ -9,6 +9,12 @@ import java.time.format.DateTimeFormatter
 
 fun String.toDate(): String {
     val dateTime: ZonedDateTime = OffsetDateTime.parse(this).toZonedDateTime()
+    val formatter = DateTimeFormatter.ofPattern("dd MMM yyyy")
+    return dateTime.format(formatter)
+}
+
+fun String.toDateEndTime(): String {
+    val dateTime: ZonedDateTime = OffsetDateTime.parse(this).toZonedDateTime()
     val formatter = DateTimeFormatter.ofPattern("dd MMM yyyy HH:mm")
     return dateTime.format(formatter)
 }

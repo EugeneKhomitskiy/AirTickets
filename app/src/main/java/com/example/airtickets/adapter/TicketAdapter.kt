@@ -41,9 +41,7 @@ class TicketViewHolder(
             startCityCode.text = ticket.startCityCode
             endCity.text = ticket.endCity
             endCityCode.text = ticket.endCityCode
-            date.text = "${ticket.startDate.toDate().substring(0, 12)}  ${
-                ticket.endDate.toDate().substring(0, 12)
-            }"
+            date.text = "${ticket.startDate.toDate()} - ${ticket.endDate.toDate()}"
             price.text = "${ticket.price} ₽"
             like.isChecked = ticket.likedByMe
 
